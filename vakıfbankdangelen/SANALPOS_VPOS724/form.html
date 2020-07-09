@@ -1,0 +1,137 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="tr">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1254">
+<title>Sanalpos</title>
+<style>
+.input_yeni {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: bold;
+	color: #666666;
+	background-color: #FFFFFF;
+	padding: 5px;
+	border: 1px solid #CCCCCC;
+}
+.Basliklar {
+	font-family: Tahoma;
+	font-size: 9pt;
+	font-weight: bold;
+	color: #666666;
+	padding-left: 10px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #EBEBEB;
+	padding-top: 2px;
+	text-align: right;
+}
+.AltCizgi {
+	font-family: Tahoma;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #666666;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #EBEBEB;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<form method="POST" action="satis.php">
+		<tr>
+			<td width="100" height="25" bgcolor="#FBFBFB" class="Basliklar">&nbsp;</td>
+			<td width="1" bgcolor="#FBFBFB" class="AltCizgi">&nbsp;</td>
+			<td bgcolor="#FBFBFB" class="AltCizgi">Pos islem Uye is yeri bilgileri</td>
+		</tr>
+		<tr>
+			<td width="100" height="25" class="Basliklar">Post Url</td>
+			<td width="1" class="AltCizgi">:</td>
+			<td class="AltCizgi">
+			<input class="input_yeni" type="text" name="PostUrl" size="98" value=''></td>
+		</tr>
+		<tr>
+			<td width="100" height="25" class="Basliklar">Is yeri no</td>
+			<td width="1" class="AltCizgi">:</td>
+			<td class="AltCizgi"><input class="input_yeni" type="text" name="IsyeriNo" size="50" value="0"></td>
+		</tr>
+		<tr>
+			<td width="100" height="25" class="Basliklar">Terminal No</td>
+			<td width="1" class="AltCizgi">:</td>
+			<td class="AltCizgi">
+			<input class="input_yeni" type="text" name="TerminalNo" size="50" value="0"></td>
+		</tr>
+		<tr>
+			<td width="100" height="25" class="Basliklar">Isyeri Sifre</td>
+			<td width="1" class="AltCizgi">:</td>
+			<td class="AltCizgi"><input class="input_yeni" type="text" name="IsyeriSifre" size="50" value="0"></td>
+		</tr>
+		<tr>
+			<td width="100" height="25" bgcolor="#FBFBFB" class="Basliklar">&nbsp;</td>
+			<td width="1" bgcolor="#FBFBFB" class="AltCizgi">&nbsp;</td>
+			<td bgcolor="#FBFBFB" class="AltCizgi">Kart Bilgileri</td>
+		</tr>
+		<tr>
+			<td width="100" height="25" class="Basliklar">Kart No</td>
+			<td width="1" class="AltCizgi">:</td>
+			<td class="AltCizgi">
+			<input class="input_yeni" type="text" name="KartNo" size="49" value="0"></td>
+		</tr>
+		<tr>
+			<td width="100" height="25" class="Basliklar">Son K.Tarihi</td>
+			<td width="1" class="AltCizgi"></td>
+			<td class="AltCizgi">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tr>
+					<td width="33">
+					<input class="input_yeni" type="text" name="KartAy" size="5" value="11"></td>
+					<td style="padding-left: 5px">
+					<input class="input_yeni" type="text" name="KartYil" size="12" value="2014"></td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td width="100" height="25" class="Basliklar">Kart Cvv</td>
+			<td width="1" class="AltCizgi">:</td>
+			<td class="AltCizgi"><input class="input_yeni" type="text" name="KartCvv" size="12" value="123"></td>
+		</tr>
+		<tr>
+			<td width="100" height="25" class="Basliklar">Tutar</td>
+			<td width="1" class="AltCizgi">:</td>
+			<td class="AltCizgi"><input class="input_yeni" type="text" name="Tutar" size="12" value="1.00"></td>
+		</tr>
+		<tr>
+			<td width="100" height="25" class="Basliklar">TutarKodu</td>
+			<td width="1" class="AltCizgi">:</td>
+			<td class="AltCizgi"><input class="input_yeni" type="text" name="TutarKodu" size="12" value="949"></td>
+		</tr>
+		<tr>
+			<td width="100" height="25" class="Basliklar">Siparis No</td>
+			<td width="1" class="AltCizgi">:</td>
+			<td class="AltCizgi">
+			<input class="input_yeni" type="text" name="SiparID" size="50" value="SipID_1389280378"></td>
+		</tr>
+		<tr>
+			<td width="100" height="25" class="Basliklar">İşlem Tipi</td>
+			<td width="1" class="AltCizgi">:</td>
+			<td class="AltCizgi"><input class="input_yeni" type="text" name="IslemTipi" size="50" value="Sale"></td>
+		</tr>
+		<tr>
+			<td width="100" height="25" class="Basliklar">&nbsp;</td>
+			<td width="1" class="AltCizgi"></td>
+			<td class="AltCizgi"><input type="submit" value="Gonder" name="B1"></td>
+		</tr>
+	</form>
+</table>
+
+</body>
+
+</html>

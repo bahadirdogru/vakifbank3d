@@ -1,0 +1,6 @@
+3D Secure entegrasyonlarýmýz iki servis adýmý ile çalýþmaktadýr. 
+Ýlk adým Enrollment aþamasýdýr, sonraki adým Sanal POS servisine iþlem gönderilip 
+para çekilme aþamasýdýr. TempSuccesUrl dosyasý ise dönen deðerleri gösterme amaçlýdýr. 
+Bu dosyanýn adý ve iþlevi farklý olabilir fakat bu adým Sanal POS’a gönderim aþamasýný 
+içeren kod bloðunu içermelidir. Enrollment aþamasýnda post edilen baþarýlý ve baþarýsýz 
+dönüþ adresinde Sanal POS’a gönderim yapacak kod bloðunun olduðu dosyanýn maplenmesi yeterlidir.
